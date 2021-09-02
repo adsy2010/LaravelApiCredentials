@@ -49,7 +49,7 @@ class ScopeTest extends TestCase
         $value = 'TEST_VALUE_STRING';
         $credentials = $this->testStoreWithNoScopes($service, $value);
 
-        $scopeValue = (new Scope)->retrieveCredentialValue($service, ['Public'], ScopeAccess::READ_AND_WRITE);
+        $scopeValue = (new Scope)->retrieveCredentialValue($service, 'Public', ScopeAccess::READ_AND_WRITE);
 
         $this->assertEquals($value, $scopeValue);
     }
@@ -60,7 +60,7 @@ class ScopeTest extends TestCase
         $value = 'TEST_VALUE_STRING';
         $credentials = $this->testStoreWithNoScopes($service, $value);
 
-        $scope = (new Scope)->retrieve($service, ['Public'], ScopeAccess::READ_AND_WRITE);
+        $scope = (new Scope)->retrieve($service, 'Public', ScopeAccess::READ_AND_WRITE);
 
         $this->assertNotEmpty($scope);
 
@@ -77,7 +77,7 @@ class ScopeTest extends TestCase
         $value = 'TEST_VALUE_STRING';
         $credentials = $this->testStoreWithNoScopes($service, $value);
 
-        $scope = (new Scope)->retrieve($service, ['Public'], ScopeAccess::READ_AND_WRITE);
+        $scope = (new Scope)->retrieve($service, 'Public', ScopeAccess::READ_AND_WRITE);
 
         $this->assertNotEmpty($scope);
     }
