@@ -1,6 +1,6 @@
 {
     "name": "adsy2010/laravel-api-credentials",
-    "description": "description",
+    "description": "This package is designed to provide an encrypted layer to API keys so they are not left exposed in env or config files directly",
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
