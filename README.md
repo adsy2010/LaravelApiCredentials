@@ -1,6 +1,6 @@
 # Laravel Api Credentials
 
-[![Build Status](https://travis-ci.org/adsy2010/LaravelStripeWrapper.svg?branch=master)](https://travis-ci.org/adsy2010/LaravelStripeWrapper)
+[![Build Status](https://travis-ci.com/adsy2010/LaravelStripeWrapper.svg?branch=master)](https://travis-ci.com/adsy2010/LaravelStripeWrapper)
 
 This package is for use in conjunction with any service which uses public and secret api keys.
 
